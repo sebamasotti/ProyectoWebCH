@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+main {
+    background-color: blueviolet;
+    grid-area: main;
+}
+aside {
+    background-color: cadetblue;
+    grid-area: aside;
+}
+footer {
+    background-color: darkgrey;
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 60vh 25vh 5vh;
+    grid-template-areas: "nav" "main" "aside" "footer";
+}
+
+@media only screen and (min-width:768px){ 
+    body {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: "nav nav nav"
+        "main main aside"
+        "footer footer footer";
+    }
+}
