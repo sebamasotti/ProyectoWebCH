@@ -3,42 +3,112 @@
     padding: 0;
 }
 html {
+    background-color: #343a40;
+    font-size: 62.5%;
+    color: #dee2e6;
     box-sizing: border-box;
 }
   *, *:before, *:after {
     box-sizing: inherit;
 }
 
-nav {
-    background-color: darkgoldenrod;
-    grid-area: nav;
+header {
+    background-color: #212529;
+    grid-area: header;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+li {
+    margin: 1rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #dee2e6;
 }
 main {
-    background-color: blueviolet;
+    padding: 1rem;
     grid-area: main;
 }
 aside {
-    background-color: cadetblue;
+    padding: 1rem;
     grid-area: aside;
 }
 footer {
-    background-color: darkgrey;
+    margin: 1rem;
     grid-area: footer;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 60vh 25vh 5vh;
-    grid-template-areas: "nav" "main" "aside" "footer";
+    grid-template-rows: auto;
+    grid-template-areas: "header" "main" "aside" "footer";
 }
 
-@media only screen and (min-width:768px){ 
+h1 {
+    margin: 1rem;
+}
+img {
+    height: 280px;
+    width: 300px;
+}
+
+.Index {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Productos_item {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (min-width:768px){ 
+    html {
+        font-size: 100%;
+    }
     body {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 10vh 85vh 5vh;
-        grid-template-areas: "nav nav nav"
+        grid-template-areas: "header header header"
         "main main aside"
         "footer footer footer";
+    }
+    .Nosotros, .Contacto {
+        grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+    img {
+        width: 500px;
+        
+    }
+}
+
+@media (min-width:1024px){ 
+    body {
+        grid-template-rows: auto;
+    }
+    img{
+        height: 500px;
+        width: 600px;
     }
 }
