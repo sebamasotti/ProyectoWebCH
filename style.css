@@ -12,28 +12,7 @@ html {
 }
 
 header {
-    background-color: #212529;
     grid-area: header;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;    
-}
-li {
-    margin: 1rem;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #dee2e6;
 }
 main {
     padding: 1rem;
@@ -41,11 +20,22 @@ main {
 }
 aside {
     padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     grid-area: aside;
 }
 footer {
     margin: 1rem;
     grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+}
+li{
+    margin-right: 1rem;
+    list-style: none;
 }
 
 body {
@@ -61,13 +51,29 @@ h1 {
 h2 {
     margin: 2rem;
 }
+h3 {
+    margin: 2rem;
+}
+p{
+    margin: 1rem;
+}
 img {
     height: 280px;
     width: 400px;
     border-radius: 1rem;
 }
-div {
-    padding: 1rem;
+
+#logo:hover {
+    transform: rotate(360deg);
+    transition: ease;
+    transition-duration: 2s;
+}
+
+.enlace-Evento {
+    font-size: x-large;
+    font-weight: bold;
+    color: #212529; 
+    text-decoration: none;
 }
 .Index {
     display: flex;
@@ -77,6 +83,7 @@ div {
 }
 .menu {
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .Productos {
@@ -96,9 +103,6 @@ div {
 .transform:hover {
     transform: translate(80px);
     transition: 2s;
-}
-.transform_Color:hover {
-    color: aqua;
 }
 .card-link {
     color: #212529;
