@@ -1,0 +1,13 @@
+/*  Pag. Productos */
+
+.Productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.Productos_item {
+    margin-top: 2rem;
+    text-align: center;
+}

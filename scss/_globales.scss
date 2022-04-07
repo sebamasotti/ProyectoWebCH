@@ -1,0 +1,35 @@
+/* Tamaño de Fuentes e Imagenes globales */
+@import "./variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    color: $color-primary;
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin: 1rem;
+}
+h2 {
+    margin: 2rem;
+}
+h3 {
+    margin: 2rem;
+}
+p{
+    margin: 1rem;
+}
+
+img {
+    height: 280px;
+    width: 400px;
+    border-radius: 1rem;
+}

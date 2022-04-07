@@ -1,0 +1,15 @@
+/* Footer */
+
+footer {
+    margin: 1rem;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    li{
+        margin-right: 1rem;
+        list-style: none;
+    }
+}

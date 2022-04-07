@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* Tamaño de Fuentes e Imagenes globales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: #dee2e6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+h2 {
+  margin: 2rem;
+}
+
+h3 {
+  margin: 2rem;
+}
+
+p {
+  margin: 1rem;
+}
+
+img {
+  height: 280px;
+  width: 400px;
+  border-radius: 1rem;
+}
+
+/* Logo */
+#logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: ease;
+  transition: ease;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.transform {
+  color: #dee2e6;
+}
+
+.transform:hover {
+  -webkit-transform: translate(80px);
+          transform: translate(80px);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+/* Body */
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header" "main" "aside" "footer";
+}
+
+/* Main */
+main {
+  padding: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.Index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Header */
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+/* Aside */
+aside {
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: aside;
+}
+
+/* Footer */
+footer {
+  margin: 1rem;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin-right: 1rem;
+  list-style: none;
+}
+
+/* Pag. Contacto */
+.card-link {
+  color: #212529;
+}
+
+.form-control {
+  border: solid;
+  border-radius: 1rem;
+}
+
+/*  Pag. Productos */
+.Productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.Productos_item {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Pag. Eventos */
+.enlace-Evento {
+  font-size: x-large;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: none;
+}
+
+/* BreakPoints */
+@media (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+  body {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "header header header" "main main aside" "footer footer footer";
+  }
+  .Nosotros, .Contacto {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  img {
+    height: 500px;
+    width: 600px;
+  }
+  .transform:hover {
+    -webkit-transform: translate(400px);
+            transform: translate(400px);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+}
+/*# sourceMappingURL=style.css.map */

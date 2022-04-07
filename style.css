@@ -24,6 +24,7 @@ aside {
     margin-bottom: 2rem;
     grid-area: aside;
 }
+
 footer {
     margin: 1rem;
     grid-area: footer;
@@ -111,6 +112,7 @@ img {
     border: solid;
     border-radius: 1rem;
 }
+
 @media (min-width:768px){ 
     html {
         font-size: 100%;

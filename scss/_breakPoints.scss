@@ -1,0 +1,33 @@
+/* BreakPoints */
+
+@media (min-width:768px){ 
+    html {
+        font-size: 100%;
+    }
+    body {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "header header header"
+        "main main aside"
+        "footer footer footer";
+    }
+    .Nosotros, .Contacto {
+        grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+}
+
+@media (min-width:1024px){ 
+    body {
+        grid-template-rows: auto;
+    }
+    img{
+        height: 500px;
+        width: 600px;
+    }
+    .transform:hover {
+        transform: translate(400px);
+        transition: 2s;
+    }
+}

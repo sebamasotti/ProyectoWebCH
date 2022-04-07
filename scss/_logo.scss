@@ -1,0 +1,15 @@
+/* Logo */
+
+#logo:hover {
+    transform: rotate(360deg);
+    transition: ease;
+    transition-duration: 2s;
+}
+
+.transform {
+    color: #dee2e6;
+}
+.transform:hover {
+    transform: translate(80px);
+    transition: 2s;
+}
