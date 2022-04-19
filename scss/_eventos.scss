@@ -1,9 +1,19 @@
 /* Pag. Eventos */
 @import "./variables";
 
+.evento {
+    text-align: center;
+}
+
 .enlace-Evento {
     font-size: x-large;
     font-weight: bold;
     color: $color-secundary;
     text-decoration: none;
+}
+
+.img-Evento {
+    margin-bottom: 1rem; 
+    margin-top: 1rem; 
+    width: 100%;
 }

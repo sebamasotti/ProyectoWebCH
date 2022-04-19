@@ -18,11 +18,11 @@ html {
 }
 
 h1 {
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 h2 {
-  margin: 2rem;
+  margin-top: 2rem;
 }
 
 h3 {
@@ -31,6 +31,11 @@ h3 {
 
 p {
   margin: 1rem;
+}
+
+a {
+  margin: 1rem;
+  text-align: center;
 }
 
 img {
@@ -129,6 +134,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul {
@@ -176,11 +184,21 @@ ul li {
 }
 
 /* Pag. Eventos */
+.evento {
+  text-align: center;
+}
+
 .enlace-Evento {
   font-size: x-large;
   font-weight: bold;
   color: #212529;
   text-decoration: none;
+}
+
+.img-Evento {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 /* BreakPoints */
