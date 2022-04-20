@@ -1,9 +1,6 @@
 /* BreakPoints */
 
 @media (min-width:768px){ 
-    html {
-        font-size: 100%;
-    }
     body {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "header header header"
@@ -14,6 +11,10 @@
         grid-template-areas: "header header header"
         "main main main"
         "footer footer footer";
+    }
+    
+    footer {
+        flex-direction: row;
     }
 
 }

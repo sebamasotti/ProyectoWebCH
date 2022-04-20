@@ -6,6 +6,7 @@
 }
 
 html {
+  font-size: 62.5%;
   color: #dee2e6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -142,10 +143,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -218,19 +215,16 @@ ul li {
 
 /* BreakPoints */
 @media (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
   body {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "header header header" "main main aside" "footer footer footer";
+        grid-template-areas: "header header header" "main main aside" "footer footer footer";
   }
   .Nosotros, .Contacto {
-        grid-template-areas: "header header header" "main main main" "footer footer footer";
-  }
-  footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
   }
 }
 
