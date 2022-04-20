@@ -1,8 +1,13 @@
 /* Aside */
 
 aside {
-    padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem;
     grid-area: aside;
+}
+/* Aside del index */
+.list-group {
+    margin-right: 2rem;
+}
+.blockquote-footer {
+    margin-right: 2rem;
 }

@@ -39,8 +39,8 @@ a {
 }
 
 img {
-  height: 280px;
-  width: 400px;
+  height: 250px;
+  width: 300px;
   border-radius: 1rem;
 }
 
@@ -105,6 +105,11 @@ main {
   margin-bottom: 2rem;
 }
 
+/* title */
+.entryTitle {
+  text-align: center;
+}
+
 /* Header */
 header {
   -ms-grid-row: 1;
@@ -114,12 +119,19 @@ header {
 
 /* Aside */
 aside {
-  padding: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 1rem;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: aside;
+}
+
+/* Aside del index */
+.list-group {
+  margin-right: 2rem;
+}
+
+.blockquote-footer {
+  margin-right: 2rem;
 }
 
 /* Footer */
